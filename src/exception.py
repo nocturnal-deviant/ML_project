@@ -1,4 +1,5 @@
 import sys
+from src.logger import logging
 
 #how error message looks like with custom exception
 def error_msg_details(error,error_detail:sys):
@@ -19,3 +20,10 @@ class CustomException(Exception):
         def __str__(self):
             return self.error_message
         
+# if __name__=="__main__":
+    
+#     try:
+#         a=1/10
+#     except Exception as e:
+#         logging.info("Divide by Zero")
+#         raise CustomException(e,sys)
